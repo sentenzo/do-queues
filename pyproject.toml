@@ -15,7 +15,7 @@ name = "My app name"
 version = "0.0.1"
 description = "My app description"
 authors = ["me <me@fake.com>"]
-license = "None"
+license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]

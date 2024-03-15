@@ -1,4 +1,4 @@
-PROJECT_DIR = my_app
+PROJECT_DIR = do_queues
 
 CODE = ${PROJECT_DIR} tests
 
