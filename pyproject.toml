@@ -1,0 +1,36 @@
+[tool.black]
+line-length = 79
+
+[tool.isort]
+line_length = 79
+known_local_folder = []
+
+[tool.mypy]
+python_version = "3.12"
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.poetry]
+name = "My app name"
+version = "0.0.1"
+description = "My app description"
+authors = ["me <me@fake.com>"]
+license = "None"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.12"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+pytest = "^8.1.1"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+markers = ["slow: marks test as slow (deselect with '-m \"not slow\"')"]
